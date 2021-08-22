@@ -1,0 +1,16 @@
+@mixin array {
+  margin: auto;
+  margin-top: 50px;
+  padding: 9px 15px;
+  min-width: 180px;
+  max-width: 550px;
+  width: 80%;
+  border-radius: 15px;
+  background-color: rgb(231, 231, 231);
+}
+@mixin title {
+  text-align: left;
+  text-transform: uppercase;
+  font-family: Poppins-SemiBold;
+  color: $main-color;
+}

@@ -1,0 +1,26 @@
+html {
+  background-image: url("../img/background-texture.svg"),
+    linear-gradient(315deg, rgb(31, 32, 88), $main-color),
+    radial-gradient(circle at 100% 100%, rgb(0, 0, 0), rgb(255, 255, 255));
+  background-repeat: repeat-y;
+  height: auto;
+}
+
+body {
+  margin: 30px 73px;
+}
+
+img {
+  width: 200px;
+}
+
+a {
+  text-decoration: none;
+  color: $main-color;
+  &:hover {
+    font-family: Poppins-SemiBold;
+  }
+  &:active {
+    color: $hover-color;
+  }
+}

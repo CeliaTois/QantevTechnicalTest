@@ -1,0 +1,27 @@
+.home {
+  width: 100%;
+  & table {
+    border-spacing: 0 6px;
+    @include array;
+    & th {
+      padding-bottom: 25px;
+      @include title;
+      &::before {
+        content: "";
+        display: block;
+        width: auto;
+        height: 2px;
+        background: $main-color;
+        position: relative;
+        top: 35px;
+      }
+    }
+    & td {
+      box-shadow: 0 0 0.7px 0.7px rgb(210, 210, 210);
+      border-radius: 7px;
+      background-color: white;
+      padding: 5px 15px;
+      font-size: $main-size;
+    }
+  }
+}

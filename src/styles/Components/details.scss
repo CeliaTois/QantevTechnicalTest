@@ -1,0 +1,27 @@
+.details {
+  @include array;
+  & #title {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid $main-color;
+    margin-bottom: 30px;
+    & h1 {
+      font-size: $main-size;
+      @include title;
+    }
+    & #return {
+      margin-right: 5px;
+    }
+  }
+  & span {
+    font-family: Poppins-SemiBold;
+    color: $main-color;
+  }
+}
+
+#map {
+  width: 100%;
+  height: 50vh;
+}
